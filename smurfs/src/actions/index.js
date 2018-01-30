@@ -20,7 +20,7 @@ export const SMURF_ADDED = 'SMURF_ADDED';
 */
 
 export const getSmurfs = () => {
-  const getSmurfs = axios.get('http://localhost:3333/smurfs')
+  const getSmurfs = axios.get('http://localhost:3333/smurfs');
   return dispatch => {
     dispatch({type: FETCHING_SMURFS})
     getSmurfs
